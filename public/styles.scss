@@ -1,0 +1,70 @@
+* {box-sizing: border-box;}
+
+@mixin marPad {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	@include marPad;
+	background-color: rgb(190, 195, 219);
+	font-family: sans-serif;
+}
+
+form {
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	input {
+		width: 150px;
+	}
+	select {
+		width: 150px;
+	}
+	button {
+		width: 100px;
+		margin: 10px;
+		padding: 10px;
+		background-color: rgb(138, 99, 150);
+		color: #fff;
+		cursor: pointer;
+		opacity: .7;
+		transition: .4s;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	textarea {
+		transition: 1s;
+		height: 20px;
+		&:hover {
+			height: 100px;
+		}
+	}
+}
+
+.categories {
+	@include marPad;
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+	div {
+		border-right: 1px solid gray; 
+		h3 {
+			@include marPad;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		ul li {
+			@include marPad;
+			list-style-type: none;
+			transition: .4s;
+			&:hover {
+				cursor: pointer;
+				background-color: rgb(146, 169, 247);
+			}
+		}
+	div:last-child {
+		border-right: none;
+	}
+}
+}

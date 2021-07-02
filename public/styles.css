@@ -1,0 +1,94 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #bec3db;
+  font-family: sans-serif;
+}
+
+form {
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input {
+  width: 150px;
+}
+
+form select {
+  width: 150px;
+}
+
+form button {
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #8a6396;
+  color: #fff;
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+form button:hover {
+  opacity: 1;
+}
+
+form textarea {
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 20px;
+}
+
+form textarea:hover {
+  height: 100px;
+}
+
+.categories {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+}
+
+.categories div {
+  border-right: 1px solid gray;
+}
+
+.categories div h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.categories div ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.categories div ul li:hover {
+  cursor: pointer;
+  background-color: #92a9f7;
+}
+
+.categories div div:last-child {
+  border-right: none;
+}
+/*# sourceMappingURL=styles.css.map */
